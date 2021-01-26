@@ -14,7 +14,8 @@ begin
     ,MB_OK + MB_ICONINFORMATION);
 
   case TMessageTimer.MessageBox(5,'Message text wait 5 seconds...','Confirme'
-    ,MB_YESNO + MB_DEFBUTTON1 + MB_ICONQUESTION) of
+    ,MB_YESNO + MB_DEFBUTTON1 + MB_ICONQUESTION)
+  of
     //IDYES, MB_TIMEDOUT: ShowMessage('Yes or TimedOut');
     IDYES      : ShowMessage('Yes');
     IDNO       : ShowMessage('No');
